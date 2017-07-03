@@ -1,0 +1,59 @@
+/*
+ * Nom du fichier                   : menu.component.scss
+ * Description                      : Fichier contenant le style le menu
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 03/07/2017
+ * Date de dernière modification    : 03/07/2017
+ */
+
+@import '../../../../variables';
+
+.main-title {
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+
+    .logo {
+        margin-top: 15px;
+        height: 50px;
+        width: 50px;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: $black;
+
+        h1 {
+            color: $black;
+        }
+    }
+}
+
+.navbar-default {
+    margin-top: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: right;
+
+    .menu-list {
+        min-height: 50px;
+        line-height: 50px;
+        text-align: right;
+        float: right;
+        font-size: 18px;
+        
+    }
+    
+    li {
+        float: none;
+        display: inline-block;
+
+        a {
+            padding: 10px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@import "./menu.mediaqueries";

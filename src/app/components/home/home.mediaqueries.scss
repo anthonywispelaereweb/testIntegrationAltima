@@ -1,0 +1,35 @@
+/*
+ * Nom du fichier                   : home.mediaqueries.scss
+ * Description                      : Fichier contenant les mediaqueries du composant home
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 03/07/2017
+ * Date de dernière modification    : 03/07/2017
+ */
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $medium-device-size) {
+    .main-title {
+        font-size: 30px;
+    }
+}
+
+
+/* Large Devices, Desktops */
+
+@media only screen and (max-width: $small-device-size) {
+    .main-title {
+        // font-size: 25px;
+        // margin: 0;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $mini-device-size) {
+    .main-title {
+        // font-size: 20px;
+        // margin: 0;
+    }
+}

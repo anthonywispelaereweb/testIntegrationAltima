@@ -1,0 +1,32 @@
+/*
+ * Nom du fichier                   : home.compnent.scss
+ * Description                      : Fichier contenant le style de la page home
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 03/07/2017
+ * Date de dernière modification    : 03/07/2017
+ */
+
+@import '../../../variables';
+
+@font-face {
+	font-family: "BitterBold";
+	src: url("../../../assets/fonts/Bitter/Bitter-Bold.ttf") format("truetype");
+	// src: url("../../../assets/fonts/Bitter/Bitter-Italic.ttf") format("truetype");
+	// src: url("../../../assets/fonts/Bitter/Bitter-Regular.ttf") format("truetype");
+}
+
+.container {
+    font-family: BitterBold;
+    background: url("../../../assets/images/background.png");
+    height: 100%;
+
+    app-menu {
+        padding: 0;
+    }
+
+    app-business-service {
+        margin-top: 30px;
+    }
+}
+
+@import './home.mediaqueries';
