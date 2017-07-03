@@ -1,0 +1,109 @@
+/*
+ * Nom du fichier                   : product-item.component.scss
+ * Description                      : Fichier contenant le style de la page d'un produit
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 24/06/2017
+ * Date de dernière modification    : 25/06/2017
+ */
+ 
+ @import '../../../variables';
+
+.app-login-info {
+    padding: 0;
+    background-color: $black;
+}
+.container {
+
+    .left-part {
+        text-align: center;
+        border-right: 1px solid $grey;
+
+        h4 {
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 18px;
+        }
+
+        .btn-default {
+            background-color: $white;
+            color: $black;
+            border: 2px solid $black;
+            border-radius: 0;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+                
+            }
+
+            &:focus, &:active, &:visited {
+                border-color: $black;
+                box-shadow: none;
+            }
+        }
+    }
+    .product-item {
+        text-align: center;
+        padding: 0;
+
+        .picture-div {
+            padding: 0;
+            img {
+                height: 350px;
+            }
+        }
+
+        .info-product {
+            margin-bottom: 30px;
+            padding: 0;
+            text-align: center;
+            
+            h3 {
+                font-weight: bold;
+                color: $black;
+            }
+
+            .description {
+
+            }
+
+            .price {
+
+            }
+
+            .add-basket {
+                .nb-product-to-add {
+                    width: 50px;
+                    line-height: 20px;
+                    padding: 6px 12px;
+
+                    &:focus, &:active, &:hover {
+                        outline-offset: -2px;
+                        outline: -webkit-focus-ring-color auto 0px;
+                    }
+                }
+                .btn-default {
+                    line-height: 20px;
+                    background-color: $white;
+                    color: $black;
+                    border: 2px solid $black;
+                    border-radius: 0;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: $black;
+                        color: $white;
+                    }
+
+                    &:focus, &:active, &:visited {
+                        border-color: $black;
+                        box-shadow: none;
+                    }
+                }
+                
+            }
+        }
+    }
+}

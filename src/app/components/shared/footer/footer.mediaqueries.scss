@@ -1,0 +1,41 @@
+/*
+ * Nom du fichier                   : footer.mediaqueries.scss
+ * Description                      : Fichier contenant les mediasqueries du composant footer
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 16/06/2017
+ * Date de dernière modification    : 16/06/2017
+ */
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $medium-device-size) {
+    .footer {
+        text-align: center;
+        font-size: 15px !important;
+    }
+}
+
+
+/* Large Devices, Desktops */
+
+@media only screen and (max-width: $small-device-size) {
+    .footer {
+        text-align: center;
+        font-size: 12px !important;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $mini-device-size) {
+    .footer {
+        text-align: center;
+        font-size: 10px !important;
+        padding-top: 5px;
+        p {
+            margin: 0 0 5px 0 !important;
+        }
+    }
+}

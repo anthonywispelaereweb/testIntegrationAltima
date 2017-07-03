@@ -1,0 +1,61 @@
+/*
+ * Nom du fichier                   : signing-up.compnent.scss
+ * Description                      : Fichier contenant le style de la page d'inscription
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 16/06/2017
+ * Date de dernière modification    : 23/06/2017
+ */
+
+@import '../../../variables';
+
+.app-login-info {
+    padding: 0;
+    background-color: $black;
+}
+
+.container {
+
+    app-menu {
+        padding: 0;
+    }
+
+    h1 {
+         text-align: center;margin-bottom: 20px;
+    }
+    
+    .info {
+         font-size: 18px;
+         text-align: center;
+    }
+
+    form {
+        text-align: center;
+        
+        .form-group {
+            text-align: left;
+        }
+
+
+        .btn-default {
+            line-height: 30px;
+            margin-top: -2px;
+            background-color: $grey;
+            color: $black;
+            border: 2px solid $black;
+            border-radius: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+                font-weight: bold;
+            }
+
+            &:focus, &:active, &:visited {
+                border-color: $black;
+                box-shadow: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+<!--
+  * Nom du fichier                   : signing-up.component.html
+  * Description                      : Fichier contenant le html de la page d'inscription
+  * Auteur(s)                        : Anthony Wispelaere
+  * Date de création                 : 27/06/2017
+  * Date de dernière modification    : 27/06/2017
+-->
+
+<app-login-info class="col-md-12 app-login-info"></app-login-info>
+
+<div class="container">
+
+    <app-menu class="col-md-12"></app-menu>
+
+    <h1>S'incrire</h1>
+
+    <div class="info col-md-12">
+        Bienvenue sur Julie Couture. Il est très simple se s'inscrire, pour cela veuillez renseigner tous les champs ci-dessous et cliquer sur "Valider"
+    </div>
+
+    <form [formGroup]="signupForm" (ngSubmit)="signup($event)">
+
+        <p>Form is valid : {{ signupForm.valid ? 'true' : 'false' }}</p>
+        <div class="form-group col-md-6">
+            <label for="lastName">Nom</label>
+            <input type="text" class="form-control" formControlName="lastName" placeholder="Entrez votre nom...">
+            <div *ngIf="!signupForm.controls.lastName.valid && signupForm.controls.lastName.touched" class="alert alert-danger">
+                Le nom doit etre compris entre 5 et 25 carractaires.
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="firstName">Prénom</label>
+            <input type="text" class="form-control" formControlName="firstName" placeholder="Entrez votre prénom...">
+            <div *ngIf="!signupForm.controls.firstName.valid && signupForm.controls.firstName.touched" class="alert alert-danger">
+                Le mot de passe est obligatoire
+            </div>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" formControlName="email" placeholder="Entrez votre email...">
+            <div *ngIf="!signupForm.controls.email.valid && signupForm.controls.email.touched" class="alert alert-danger">
+                Une addresse mail valide est obligatoire
+            </div>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="mdp">Mot de passe</label>
+            <input type="password" class="form-control" formControlName="mdp" placeholder="Entrez votre mot de passe...">
+            <div *ngIf="!signupForm.controls.mdp.valid && signupForm.controls.mdp.touched" class="alert alert-danger">
+                Le mot de passe est obligatoire
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-default">S'inscrire</button>
+    </form>
+
+    <!--<form name="form col-md-12" (ngSubmit)="f.form.valid" #f="ngForm" novalidate>
+        <div class="form-group col-md-6">
+            <label for="lastName">Nom</label>
+            <input type="text" class="form-control" id="lastName" required>
+            <div *ngIf="f.submitted && !lastName.valid" class="help-block">Le nom est obligatoire</div>
+        </div>
+ 
+        <div class="form-group col-md-6">
+            <label for="firstName">Prénom</label>
+            <input type="text" class="form-control" id="firstName">
+            <div *ngIf="f.submitted && !password.valid" class="help-block">Le mot de passe est obligatoire</div>
+            
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email">
+            <div *ngIf="f.submitted && !email.valid" class="help-block">Une addresse mail valide est obligatoire</div>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="mdp">Mot de passe</label>
+            <input type="password" class="form-control" id="mdp">
+            <div *ngIf="f.submitted && !mdp.valid" class="help-block">Le mot de passe est obligatoire</div>
+        </div>
+ 
+        <button type="submit" class="btn btn-default">S'inscrire</button>
+
+    </form>-->
+</div>
+
+<app-footer></app-footer>

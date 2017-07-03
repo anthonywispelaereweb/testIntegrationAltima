@@ -1,0 +1,59 @@
+/*
+ * Nom du fichier                   : user-profile.component.scss
+ * Description                      : Contient le style du composant user-profile
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 16/06/2017
+ * Date de dernière modification    : 26/06/2017
+ */
+
+@import '../../../variables';
+
+.app-login-info {
+    padding: 0;
+    background-color: $black;
+}
+
+.container {
+
+    app-menu {
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    .global-info {
+        .civility-info {
+
+            label {
+                margin-top: 5px;
+                line-height: 18px;
+                padding: 0;
+            }
+
+            p {
+                margin-top: 5px;
+            }
+        }
+        .user-profile-picture {
+            text-align: center;
+            img {
+                max-height: 250px;
+                max-width: 250px;
+                border-radius: 50%;
+            }
+        }
+        
+        .web-info {
+            label {
+                margin-top: 5px;
+                line-height: 18px;
+                padding: 0;
+            }
+
+            p {
+                margin-top: 5px;
+            }
+        }
+    }
+}

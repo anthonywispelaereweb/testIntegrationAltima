@@ -1,0 +1,33 @@
+<!--
+  * Nom du fichier                   : login.component.html
+  * Description                      : Contient le code html du composant login
+  * Auteur(s)                        : Anthony Wispelaere
+  * Date de création                 : 16/06/2017
+  * Date de dernière modification    : 26/06/2017
+-->
+
+<div class="container">
+    
+    <h1>Connexion</h1>
+    <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <div class="form-group col-md-5" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required />
+            <div *ngIf="f.submitted && !email.valid" class="help-block">Username is required</div>
+        </div>
+        <div class="form-group col-md-offset-2 col-md-5" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+            <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+        </div>
+        <div class="form-group validate-btn">
+            <button [disabled]="loading" class="btn btn-primary">Login</button>
+            
+        </div>
+        <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+    </form>
+    <hr>
+    <h4 class="add-acount">
+        Si vous n'avez pas de compte, créez en un <a href="/signingUp">ici</a>.
+    </h4>
+</div>

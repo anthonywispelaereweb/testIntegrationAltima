@@ -1,0 +1,35 @@
+/*
+ * Nom du fichier                   : login.component.scss
+ * Description                      : Fichier contenant le style du composant login
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 16/06/2017
+ * Date de dernière modification    : 26/06/2017
+ */
+
+@import "../../../variables";
+
+.container {
+    h1 {
+        text-align: center;
+    }
+
+    .form-group {
+        margin-top: 20px;
+
+        label {
+            font-size: 22px;
+        }
+    }
+
+    .validate-btn {
+        text-align: center;
+
+        .btn-primary {
+            margin-top: 20px;
+        }
+    }
+    h4 {
+        text-align: center;
+    }
+
+}

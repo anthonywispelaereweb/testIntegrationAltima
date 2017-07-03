@@ -1,0 +1,19 @@
+<!--
+  * Nom du fichier                   : logout.component.html
+  * Description                      : Fichier contenant le html de la page logout
+  * Auteur(s)                        : Anthony Wispelaere
+  * Date de création                 : 16/06/2017
+  * Date de dernière modification    : 16/06/2017
+-->
+
+<div class="container">
+  
+  <h1>Déconnexion</h1>
+
+  <p>
+    Etes-vous sur de vouloir vous déconnecter ?
+    <br>
+    <button class="btn btn-default" (click)="logout()">Oui</button>
+    <button class="btn btn-danger" routerLink="/home">Non</button>
+  </p>
+</div>
