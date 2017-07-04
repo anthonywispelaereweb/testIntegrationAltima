@@ -7,5 +7,5 @@
  */
 
 export class Config {
-    // public static get API_URL(): string { return 'http://serveur.dumortierweb.fr:8125/api/1.0/juliecoud/'; }
+    // public static get API_URL(): string { return 'http://serveur...'; }
 }

@@ -1,0 +1,40 @@
+/*
+ * Nom du fichier                   : banner-relax.compnent.scss
+ * Description                      : Fichier contenant le style de  la baniere relax
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 03/07/2017
+ * Date de dernière modification    : 03/07/2017
+ */
+
+@import '../../../variables';
+
+@font-face {
+	font-family: "BitterBold";
+	src: url("../../../assets/fonts/Bitter/Bitter-Bold.ttf") format("truetype");
+	// src: url("../../../assets/fonts/Bitter/Bitter-Italic.ttf") format("truetype");
+	// src: url("../../../assets/fonts/Bitter/Bitter-Regular.ttf") format("truetype");
+}
+
+ .global-banner-relax {
+    background: url("../../../assets/images/banner2.png");
+    background-size: cover;
+    height: 600px;
+    color: $white;
+    font-family: "BitterBold";
+
+    .title {
+        text-transform: uppercase;
+        margin-top: 50px;
+        font-size: 35px;
+
+        span {
+            color: $red;
+        }
+    }
+
+    .subtitle {
+        margin-top: 50px;
+        font-size: 25px;
+        
+    }
+ }
