@@ -17,7 +17,6 @@ import { CustomHttp } from './middlewares/custom-http';
 
 // Bootstrap modules
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 // Routes
 import { Routes } from './routes/routes';
@@ -28,12 +27,11 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { MenuComponent } from './components/shared/menu/menu.component';
-
-// Custom services
-import { ContactComponent } from './components/contact/contact.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { BusinessServiceComponent } from './components/business-service/business-service.component';
+import { BannerRelaxComponent } from './components/banner-relax/banner-relax.component';
 
+// Custom services
 
 export function customHttpFct(backend: XHRBackend, options: RequestOptions, router: Router) {
   return new CustomHttp(backend, options, router);
@@ -47,9 +45,9 @@ export function customHttpFct(backend: XHRBackend, options: RequestOptions, rout
     FooterComponent,
     NotFoundComponent,
     MenuComponent,
-    ContactComponent,
     BannerComponent,
-    BusinessServiceComponent
+    BusinessServiceComponent,
+    BannerRelaxComponent
   ],
   imports: [
     // Core modules

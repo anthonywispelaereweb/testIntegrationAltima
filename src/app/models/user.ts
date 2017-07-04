@@ -6,23 +6,10 @@
  * Date de dernière modification    : 03/07/2017
  */
 
-export class User {
+export class Article {
     id                  : number;
-    lastname            : string;
-    firstname           : string;
-    civilityId          : number;
-    address             : string;
-    postCode            : string;
-    city                : string;
-    country             : string;
-    email               : string;
-    password            : string;
-    birthdate           : string;
-    profilPictureId     : number;
-    phonenumber         : string;
-    lastLogoutDate      : string;
-    userStatusIs        : number;
-    userRoleId          : number;
-    registerdate        : string;
-    url                 : string;
+    title               : string;
+    subtitle            : number;
+    description         : string;
+    content             : number;
 }

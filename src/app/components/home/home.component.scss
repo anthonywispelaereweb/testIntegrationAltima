@@ -22,11 +22,19 @@
 
     app-menu {
         padding: 0;
+        height: 100%;
+        
     }
 
     app-business-service {
         margin-top: 30px;
+        height: 100%;
+        
     }
+}
+app-banner-relax {
+    margin-top: 30px;
+    height: 100%;
 }
 
 @import './home.mediaqueries';
