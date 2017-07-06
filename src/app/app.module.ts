@@ -30,6 +30,9 @@ import { MenuComponent } from './components/shared/menu/menu.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { BusinessServiceComponent } from './components/business-service/business-service.component';
 import { BannerRelaxComponent } from './components/banner-relax/banner-relax.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { FrameworkComponent } from './components/framework/framework.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 // Custom services
 
@@ -47,7 +50,10 @@ export function customHttpFct(backend: XHRBackend, options: RequestOptions, rout
     MenuComponent,
     BannerComponent,
     BusinessServiceComponent,
-    BannerRelaxComponent
+    BannerRelaxComponent,
+    BlogComponent,
+    FrameworkComponent,
+    ContactComponent
   ],
   imports: [
     // Core modules

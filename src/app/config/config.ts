@@ -7,5 +7,5 @@
  */
 
 export class Config {
-    // public static get API_URL(): string { return 'http://serveur...'; }
+    public static get ARTICLES_URI(): string { return './assets/data/articles.json'; }
 }

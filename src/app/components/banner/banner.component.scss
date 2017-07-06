@@ -5,6 +5,7 @@
  * Date de création                 : 03/07/2017
  * Date de dernière modification    : 06/07/2017
  */
+
 @import '../../../variables';
 
 .global-banner {
@@ -16,13 +17,13 @@
 
     .tittle {
         margin-top: 15%;
-        font-size: 50px;
+        font-size: 70px;
         text-transform: uppercase;
         font-weight: bold;
     }
 
     .description {
-        margin-top: 5%;
+        margin-top: 10px;
         font-size: 25px;
     }
 

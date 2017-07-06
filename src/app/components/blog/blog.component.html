@@ -1,0 +1,24 @@
+<!--
+  * Nom du fichier                   : blog.component.html
+  * Description                      : Fichier contenant le html de la page blog
+  * Auteur(s)                        : Anthony Wispelaere
+  * Date de création                 : 06/07/2017
+  * Date de dernière modification    : 06/07/2017
+-->
+
+<div class="container">
+
+    <app-menu ></app-menu>
+
+</div>
+
+<h1>Bienvenue sur le blog</h1>
+
+<p *ngFor="let article of articles">
+    {{ article.id}}
+</p>
+
+
+
+
+

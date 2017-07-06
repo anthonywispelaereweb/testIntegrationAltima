@@ -1,8 +1,8 @@
 /*
- * Nom du fichier                   : home.compnent.scss
- * Description                      : Fichier contenant le style de la page home
+ * Nom du fichier                   : blog.compnent.scss
+ * Description                      : Fichier contenant le style de la page blog
  * Auteur(s)                        : Anthony Wispelaere
- * Date de création                 : 03/07/2017
+ * Date de création                 : 06/07/2017
  * Date de dernière modification    : 06/07/2017
  */
 
@@ -22,23 +22,5 @@
     app-menu {
         padding: 0;
         height: 100%;
-        
-    }
-
-    app-business-service {
-        margin-top: 30px;
-        height: 100%;
-        
     }
 }
-app-banner-relax {
-    margin-top: 30px;
-    height: 100%;
-}
-
-app-contact {
-    height: 100%;
-    font-family: "BitterBold";
-}
-
-@import './home.mediaqueries';
