@@ -1,9 +1,9 @@
 /*
  * Nom du fichier                   : business-service.component.scss
- * Description                      : Fichier contenant le style de la présentation des service
+ * Description                      : Fichier contenant le style de la présentation des services
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 03/07/2017
- * Date de dernière modification    : 03/07/2017
+ * Date de dernière modification    : 06/07/2017
  */
 
 @import '../../../variables';
@@ -30,6 +30,11 @@
 
     .global-service {
         margin: 10px 0;
+
+        .separator {
+            display: none,
+        }
+
         .service-item {
             .description {
                 color: $grey;
@@ -37,3 +42,5 @@
         }
     }
 }
+
+@import './business-service.mediaqueries';

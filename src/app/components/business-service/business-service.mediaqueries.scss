@@ -1,0 +1,58 @@
+/*
+ * Nom du fichier                   : business-service.mediaqueries.scss
+ * Description                      : Fichier contenant les mediaqueries des services
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 03/07/2017
+ * Date de dernière modification    : 06/07/2017
+ */
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $medium-device-size) {
+    .global-business-service {
+        height: 100%;
+
+        .title {
+            margin-top: 20px;
+            font-size: 20px;
+
+            h1 {
+                margin-top: 20px;
+            }
+        }
+
+        .subtitles {
+            margin: 15px 0;
+        }
+
+        .global-service {
+            margin: 5px 0;
+
+            .service-item {
+
+                i, img {
+                    min-height: 80px;
+                    margin: 10px 0;
+                }
+
+                .description {
+                    color: $grey;
+                }
+            }
+        }
+    }
+}
+
+
+/* Large Devices, Desktops */
+
+@media only screen and (max-width: $small-device-size) {
+    
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $mini-device-size) {
+    
+}

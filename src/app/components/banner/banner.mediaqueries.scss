@@ -1,0 +1,55 @@
+/*
+ * Nom du fichier                   : banner.mediaqueries.scss
+ * Description                      : Fichier contenant les mediaqueries de la bannière
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 06/07/2017
+ * Date de dernière modification    : 06/07/2017
+ */
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $medium-device-size) {
+    .global-banner {
+        background-size: cover;
+        height: 300px;
+        text-align: center;
+        color: $white;
+
+        .tittle {
+            margin-top: 10%;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .description {
+            margin-top: 3%;
+            font-size: 18px;
+        }
+
+        .btn-default {
+            margin-top: 3%;
+            font-size: 12px;
+            padding: 10px 0;
+            width: 170px;
+            line-height: 18px;
+            text-transform: uppercase;
+            border-radius: 35px;
+            font-weight: bold;
+        }
+    }
+}
+
+
+/* Large Devices, Desktops */
+
+@media only screen and (max-width: $small-device-size) {
+    
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $mini-device-size) {
+    
+}

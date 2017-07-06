@@ -3,7 +3,7 @@
  * Description                      : Fichier contenant le style le menu
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 03/07/2017
- * Date de dernière modification    : 03/07/2017
+ * Date de dernière modification    : 06/07/2017
  */
 
 @import '../../../../variables';
@@ -36,6 +36,11 @@
     border-color: transparent;
     text-align: right;
 
+    .container-fluid {
+        .navbar-brand {
+            display: none;
+        }
+    }
     .menu-list {
         min-height: 50px;
         line-height: 50px;

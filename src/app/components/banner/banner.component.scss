@@ -3,7 +3,7 @@
  * Description                      : Fichier contenant le style de la bannière
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 03/07/2017
- * Date de dernière modification    : 03/07/2017
+ * Date de dernière modification    : 06/07/2017
  */
 @import '../../../variables';
 
@@ -36,3 +36,6 @@
         border-radius: 35px;
         font-weight: bold;
     }
+}
+
+@import './banner.mediaqueries';
