@@ -33,6 +33,7 @@ import { BannerRelaxComponent } from './components/banner-relax/banner-relax.com
 import { BlogComponent } from './components/blog/blog.component';
 import { FrameworkComponent } from './components/framework/framework.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ArticleItemComponent } from './components/article-item/article-item.component';
 
 // Custom services
 
@@ -53,7 +54,8 @@ export function customHttpFct(backend: XHRBackend, options: RequestOptions, rout
     BannerRelaxComponent,
     BlogComponent,
     FrameworkComponent,
-    ContactComponent
+    ContactComponent,
+    ArticleItemComponent
   ],
   imports: [
     // Core modules

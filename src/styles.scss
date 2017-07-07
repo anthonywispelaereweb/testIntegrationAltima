@@ -3,12 +3,24 @@
  * Description                      : Fichier contenant le style global
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 03/07/2017
- * Date de dernière modification    : 03/07/2017
+ * Date de dernière modification    : 07/07/2017
  */
 
- @import "variables";
+@import "variables";
+@import 'mixins';
 
- html, body {
+// Polices
+@include font-face("Bitter", "assets/fonts/Bitter/Bitter-Bold", bold, normal, ttf);
+@include font-face("Bitter", "assets/fonts/Bitter/Bitter-Italic", normal, italic, ttf);
+@include font-face("Bitter", "assets/fonts/Bitter/Bitter-Regular", normal, normal, ttf);
+
+@include font-face("Poppins", "assets/fonts/Poppins/Poppins-Bold", bolder, normal, ttf);
+@include font-face("Poppins", "assets/fonts/Poppins/Poppins-Light", lighter, normal, ttf);
+@include font-face("PoppinsMedium", "assets/fonts/Poppins/Poppins-Medium", normal, normal, ttf);
+@include font-face("Poppins", "assets/fonts/Poppins/Poppins-Regular", normal, normal, ttf);
+@include font-face("Poppins", "assets/fonts/Poppins/Poppins-SemiBold", bold, normal, ttf);
+
+html, body {
     background-color: $white;
     font-family: 'OpenSans-Regular';
 
@@ -51,5 +63,4 @@
             }
         }
     }
-
 }

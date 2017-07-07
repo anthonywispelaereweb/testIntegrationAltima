@@ -3,28 +3,39 @@
  * Description                      : Fichier contenant le style de la bannière contact
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 0/07/2017
- * Date de dernière modification    : 06/07/2017
+ * Date de dernière modification    : 07/07/2017
  */
+
 @import '../../../variables';
 
 .global-contact {
     height: 100%;
     background-color: $red;
     text-align: center;
+    font-family: Poppins;
+    font-weight: bold;
+    color: $white;
 
     h1 {
-        font-size: 70px;
-        text-transform: uppercase;
-        color: $white;
+        font-size: 40px;
         font-weight: bold;
-        margin-top: 30px;
+        text-transform: uppercase;
+        margin-top: 70px;
+        margin-bottom: 30px;
     }
 
     .btn-default {
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: 18px;
+        color: $white;
         padding: 8px 20PX;
-        margin-bottom: 30px;
+        margin-bottom: 70px;
+        background-color: $buttonContact;
+
+        &:hover {
+            background-color: $white;
+            color : $black;
+        }
     }
 }
 

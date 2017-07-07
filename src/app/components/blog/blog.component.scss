@@ -3,24 +3,57 @@
  * Description                      : Fichier contenant le style de la page blog
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 06/07/2017
- * Date de dernière modification    : 06/07/2017
+ * Date de dernière modification    : 07/07/2017
  */
 
 @import '../../../variables';
 
-@font-face {
-	font-family: "BitterBold";
-	src: url("../../../assets/fonts/Bitter/Bitter-Bold.ttf") format("truetype");
-	// src: url("../../../assets/fonts/Bitter/Bitter-Italic.ttf") format("truetype");
-	// src: url("../../../assets/fonts/Bitter/Bitter-Regular.ttf") format("truetype");
-}
+.global-blog {
+    .container {
 
-.container {
-    font-family: BitterBold;
-    height: 100%;
+        app-menu {
+            padding: 0;
+        }
+    }
 
-    app-menu {
-        padding: 0;
-        height: 100%;
+    .articles {
+        .article-item {
+            margin-bottom: 70px;
+            padding: 0;
+
+            .article-title {
+                font-family: Poppins;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            img {
+                margin-top: 10px;
+                padding: 0;
+            }
+
+            .description-article {
+                font-family: Bitter;
+                text-align: justify;
+                font-size: 14px;
+                overflow: auto;
+                padding-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    h1 {
+        text-align: center;
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    .subtitle-blog {
+        text-align: center;
+        font-family: Bitter;
+        font-size: 20px;
+        margin-bottom: 60px;
     }
 }

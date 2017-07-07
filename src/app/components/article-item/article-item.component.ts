@@ -1,12 +1,14 @@
 /*
- * Nom du fichier                   : blog.component.ts
- * Description                      : Contient le code de la page blog
+ * Nom du fichier                   : article-item.component.ts
+ * Description                      : Contient le code de la page d'un article
  * Auteur(s)                        : Anthony Wispelaere
- * Date de création                 : 06/07/2017
+ * Date de création                 : 07/07/2017
  * Date de dernière modification    : 07/07/2017
  */
 
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 import { Http, Response } from '@angular/http';
 import { Config } from '../../config/config';
 import { Observable } from 'rxjs/Observable';
@@ -15,20 +17,22 @@ import 'rxjs/add/operator/finally';
 import 'rxjs/add/operator/map';
 
 import { Article } from '../../models/article';
- 
-
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss']
+    selector: 'app-article-item',
+    templateUrl: './article-item.component.html',
+    styleUrls: ['./article-item.component.scss']
 })
 
-export class BlogComponent implements OnInit {
+export class ArticleItemComponent implements OnInit {
+    sub: any;
+    id: number;
     articles: Article[];
     public articles_uri: string = Config.ARTICLES_URI;
 
-    constructor(private http: Http) {}
+    public article = new Article();
+
+    constructor(private route: ActivatedRoute, private http: Http) { }
 
     getArticles() {
         let promise = new Promise((resolve, reject) => {
@@ -48,15 +52,22 @@ export class BlogComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.getArticles().then(
-          (data: Article[]) => {
-              data.forEach(element => {
+        this.sub = this.route.params.subscribe(params => {
+            this.id = +params['id'];
+        });
 
-              });
-          },
-          (error) => {
-              console.log('error: ');
-          });
+        this.getArticles().then(
+            (data: Article[]) => {
+                data.forEach(element => {
+                  if (this.id === element.id) {
+                      this.article = element;
+                  } 
+                });
+            },
+            (error) => {
+                console.log('error: ');
+            }
+        );
     }
 
 }

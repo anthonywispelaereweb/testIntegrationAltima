@@ -3,22 +3,48 @@
   * Description                      : Fichier contenant le html de la page blog
   * Auteur(s)                        : Anthony Wispelaere
   * Date de création                 : 06/07/2017
-  * Date de dernière modification    : 06/07/2017
+  * Date de dernière modification    : 07/07/2017
 -->
 
-<div class="container">
+<div class="global-blog">
+    <div class="container">
 
-    <app-menu ></app-menu>
+        <app-menu ></app-menu>
 
+    </div>
+
+    <app-banner></app-banner>
+
+    <h1>BLOG</h1>
+
+    <div class="subtitle-blog">
+        Proin iaculis purus consequat sem cure.
+    </div>
+
+    <div class="articles container">
+
+        <div *ngFor="let article of articles">
+
+            <div class="article-item col-md-4">
+                <a routerLink="/article/{{ article.id }}">
+                    <p class="article-title">{{ article.title }}</p>
+                    
+                    <img  class="col-md-11" src="./assets/images/articles/{{article.picture}}" alt="Picture of new">
+
+                    <div class="description-article col-md-11">
+                        {{article.content}}
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    
+    </div>
+
+
+    <app-contact></app-contact>
+
+    <app-footer></app-footer>
 </div>
-
-<h1>Bienvenue sur le blog</h1>
-
-<p *ngFor="let article of articles">
-    {{ article.id}}
-</p>
-
-
-
 
 
