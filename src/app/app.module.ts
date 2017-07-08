@@ -34,6 +34,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { FrameworkComponent } from './components/framework/framework.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ArticleItemComponent } from './components/article-item/article-item.component';
+import { AboutComponent } from './components/about/about.component';
 
 // Custom services
 
@@ -55,7 +56,8 @@ export function customHttpFct(backend: XHRBackend, options: RequestOptions, rout
     BlogComponent,
     FrameworkComponent,
     ContactComponent,
-    ArticleItemComponent
+    ArticleItemComponent,
+    AboutComponent
   ],
   imports: [
     // Core modules
