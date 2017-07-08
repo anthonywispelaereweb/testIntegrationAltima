@@ -1,0 +1,81 @@
+/*
+ * Nom du fichier                   : about.mediaqueries.scss
+ * Description                      : Fichier contenant les mediaqueries de la page about
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 08/07/2017
+ * Date de dernière modification    : 08/07/2017
+ */
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $medium-device-size) {
+    .global-about {
+        padding: 0 5px;
+        h1 {
+            font-size: 30px;
+            margin-top: 60px;
+        }
+
+        .global-content {
+            margin-bottom: 50px;
+
+            .subtitle-about {
+                text-align: center;
+                font-family: Bitter;
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
+
+            .other-title {
+                font-size: 16px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            .contaent-about {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+/* Large Devices, Desktops */
+
+@media only screen and (max-width: $small-device-size) {
+    .global-about {
+        padding: 0 5px;
+        h1 {
+            font-size: 30px;
+            margin-top: 80px;
+        }
+
+        .global-content {
+            margin-bottom: 80px;
+
+            .subtitle-about {
+                text-align: center;
+                font-family: Bitter;
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+
+            .other-title {
+                font-size: 16px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            .contaent-about {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $mini-device-size) {
+    
+}

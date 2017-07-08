@@ -3,7 +3,7 @@
  * Description                      : Fichier contenant le style le menu
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 03/07/2017
- * Date de dernière modification    : 07/07/2017
+ * Date de dernière modification    : 08/07/2017
  */
 
 @import '../../../../variables';
@@ -20,12 +20,10 @@
         width: 40px;
         padding: 0;
         line-height: 50px;
-        
     }
     
     a {
         text-decoration: none;
-        
 
         h1 {
             line-height: 50px;
@@ -50,7 +48,6 @@
         }
     }
     .menu-list {
-        
         text-align: right;
         float: right;
         font-size: 14px;
@@ -70,9 +67,7 @@
                 }
             }
         }
-        
     }
-    
 }
 
 @import "./menu.mediaqueries";

@@ -7,36 +7,127 @@
  */
 
 
+
+
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: $medium-device-size) {
     .main-title {
         display: none;
-        font-weight: bold;
-        text-align: center;
-        padding: 0;
-        margin: 0;
+    }
 
-        .logo {
-            margin-top: 10px;
-            height: 20px;
-            width: 20px;
-            padding: 0;
-        }
+    .navbar-default {
+        margin-top: 20px;
+        background-color: transparent;
+        border-color: transparent;
+        text-align: right;
 
-        .logo-title {
-            margin-top: 10px;
-            font-size: 15px;
-        }
-        
-        a {
-            text-decoration: none;
-            color: $black;
+        .container-fluid {
+            .navbar-collapse {
+                text-align: center;
+                margin: 0;
+                border-color: transparent;
+            }
+            .navbar-header {
+                margin-right: 10px;
+            }
+            .navbar-brand {
+                display: inline-block;
 
-            h1 {
-                color: $black;
+                img {
+                    margin-left: 10px;
+                }
+
+                p {
+                    margin: 0;
+                    line-height: 30px;
+                }
             }
         }
+        .menu-list {
+            min-height: 25px;
+            line-height: 25px;
+            text-align: right;
+            float: none;
+            font-size: 12px;
+            
+            li {
+                float: none;
+                display: inline-block;
+
+                a {
+                    padding: 3px;
+                    text-transform: uppercase;
+                    font-size: 22px ;
+                }
+            }
+        }
+        
+    }
+}
+
+
+/* Large Devices, Desktops */
+
+@media only screen and (max-width: $small-device-size) {
+    .main-title {
+        display: none;
+    }
+
+    .navbar-default {
+        margin-top: 20px;
+        background-color: transparent;
+        border-color: transparent;
+
+        .container-fluid {
+            .navbar-collapse {
+                text-align: center;
+                margin: 0;
+                border-color: transparent;
+            }
+            .navbar-header {
+                margin-right: 10px;
+            }
+            .navbar-brand {
+                display: inline-block;
+                img {
+                    margin-left: 10px;
+                }
+
+                p {
+                    margin: 0;
+                    line-height: 30px;
+                }
+            }
+        }
+        .menu-list {
+            min-height: 30px;
+            line-height: 30px;
+            text-align: right;
+            float: none;
+            font-size: 25px;
+            display: block;
+            margin: 0;
+            text-align: center;
+            
+            li {
+                float: none;
+                display: block;
+                a {
+                    padding: 0;
+                    text-transform: uppercase;
+                    font-size:20px; 
+                }
+            }
+        }
+        
+    }
+}
+/* Mini Devices, Desktops */
+
+@media only screen and (max-width: $mini-device-size) {
+    .main-title {
+        display: none;
     }
 
     .navbar-default {
@@ -67,36 +158,25 @@
             }
         }
         .menu-list {
-            min-height: 25px;
-            line-height: 25px;
+            min-height: 20px;
+            line-height: 20px;
             text-align: right;
             float: none;
-            font-size: 12px;
+            font-size: 10px;
+            display: block !important;
+            margin: 0;
+            text-align: center;
             
         }
         
         li {
             float: none;
-            display: inline-block;
-
+            display: block;
             a {
-                padding: 3px;
+                padding: 0;
                 text-transform: uppercase;
             }
         }
     }
-}
 
-
-/* Large Devices, Desktops */
-
-@media only screen and (max-width: $small-device-size) {
-    
-}
-
-
-/* Medium Devices, Desktops */
-
-@media only screen and (max-width: $mini-device-size) {
-    
 }

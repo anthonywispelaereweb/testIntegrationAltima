@@ -3,26 +3,89 @@
  * Description                      : Fichier contenant les mediasqueries du composant footer
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 03/07/2017
- * Date de dernière modification    : 03/07/2017
+ * Date de dernière modification    : 08/07/2017
  */
 
 
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: $medium-device-size) {
-    
+    footer{
+
+        .global-footer {
+            .copyright {
+                line-height: 40px;
+                margin-top: 70px;
+            }
+
+
+            .social-logo {
+                margin: 50px 15px;
+                background-color: $black;
+                border-radius: 50%;
+                line-height: 40px;
+                width: 40px ;
+                height: 40px;
+                text-align: center;
+                padding: 0;
+            
+            }
+        }
+    }
 }
 
 
-/* Large Devices, Desktops */
+/* Small Devices, Desktops */
 
 @media only screen and (max-width: $small-device-size) {
-    
+    footer{
+
+        .global-footer {
+            .copyright {
+                line-height: 20px;
+                margin-top: 30px;
+            }
+
+
+            .social-logo {
+                margin: 50px 15px;
+                background-color: $black;
+                border-radius: 50%;
+                line-height: 40px;
+                width: 40px ;
+                height: 40px;
+                text-align: center;
+                padding: 0;
+                
+            }
+        }
+    }
 }
 
 
-/* Medium Devices, Desktops */
+/* Mini Devices, Desktops */
 
 @media only screen and (max-width: $mini-device-size) {
-    
+    footer{
+
+    .global-footer {
+        .copyright {
+            line-height: 20px;
+            margin-top: 30px;
+        }
+
+
+        .social-logo {
+            margin: 30px 15px;
+            background-color: $black;
+            border-radius: 50%;
+            line-height: 40px;
+            width: 40px ;
+            height: 40px;
+            text-align: center;
+            padding: 0;
+            
+        }
+    }
+}
 }

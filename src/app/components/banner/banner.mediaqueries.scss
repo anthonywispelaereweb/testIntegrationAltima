@@ -3,53 +3,127 @@
  * Description                      : Fichier contenant les mediaqueries de la bannière
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 06/07/2017
- * Date de dernière modification    : 06/07/2017
+ * Date de dernière modification    : 08/07/2017
  */
 
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: $medium-device-size) {
-    .global-banner {
-        background-size: cover;
-        height: 300px;
-        text-align: center;
-        color: $white;
+    .banner-content {
 
-        .tittle {
-            margin-top: 10%;
-            font-size: 25px;
-            text-transform: uppercase;
-            font-weight: bold;
+        .global-banner {
+            background-size: cover;
+            text-align: center;
+            height: 200px;
+            color: $white;
         }
 
-        .description {
-            margin-top: 3%;
-            font-size: 18px;
-        }
+        .global-banner-content {
+            height: 200px;
 
-        .btn-default {
-            margin-top: 3%;
-            font-size: 12px;
-            padding: 10px 0;
-            width: 170px;
-            line-height: 18px;
-            text-transform: uppercase;
-            border-radius: 35px;
-            font-weight: bold;
+            .tittle {
+                margin-top: 30px;
+                font-size: 25px ;
+            }
+
+            .description {
+                margin-top: 3%;
+                font-size: 18px;
+            }
+
+            .btn-default {
+                margin-top: 20px;
+                font-size: 12px;
+                padding: 10px 0;
+                width: 170px;
+                line-height: 18px;
+                text-transform: uppercase;
+                border-radius: 35px;
+                font-weight: bold;
+            }
         }
     }
 }
 
 
-/* Large Devices, Desktops */
+/* Small Devices, Desktops */
 
 @media only screen and (max-width: $small-device-size) {
-    
+    .banner-content {
+        text-align: center;
+        
+        .global-banner {
+            background-size: cover;
+            text-align: center;
+            height: 250px;
+            color: $white;
+        }
+        
+        .global-banner-content {
+            text-align: center;
+            height: 250px;
+            width: auto;
+
+            .tittle {
+                margin-top: 30px;
+                font-size: 30px ;
+            }
+
+            .description {
+                margin-top: 3%;
+                font-size: 18px;
+            }
+
+            .btn-default {
+                margin-top: 20px;
+                font-size: 12px;
+                padding: 10px 0;
+                width: 170px;
+                line-height: 18px;
+                text-transform: uppercase;
+                border-radius: 35px;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 
-/* Medium Devices, Desktops */
+/* Mini Devices, Desktops */
 
 @media only screen and (max-width: $mini-device-size) {
-    
+    .banner-content {
+
+        .global-banner {
+            background-size: cover;
+            text-align: center;
+            height: 200px;
+            color: $white;
+        }
+        
+        .global-banner-content {
+            height: 200px;
+
+            .tittle {
+                margin-top: 30px;
+                font-size: 20px ;
+            }
+
+            .description {
+                margin-top: 3%;
+                font-size: 15px;
+            }
+
+            .btn-default {
+                margin-top: 20px;
+                font-size: 8px;
+                padding: 5px 0;
+                width: 80px;
+                line-height: 18px;
+                text-transform: uppercase;
+                border-radius: 35px;
+                font-weight: bold;
+            }
+        }
+    }
 }
