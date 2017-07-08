@@ -3,12 +3,12 @@
  * Description                      : Contient le code de la page d'un article
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 07/07/2017
- * Date de dernière modification    : 07/07/2017
+ * Date de dernière modification    : 08/07/2017
  */
 
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
+import { ArticleService }from '../../services/article.service';
 import { Http, Response } from '@angular/http';
 import { Config } from '../../config/config';
 import { Observable } from 'rxjs/Observable';
@@ -32,36 +32,19 @@ export class ArticleItemComponent implements OnInit {
 
     public article = new Article();
 
-    constructor(private route: ActivatedRoute, private http: Http) { }
-
-    getArticles() {
-        let promise = new Promise((resolve, reject) => {
-            let self = this;
-            this.articles = [];
-            this.http.get(self.articles_uri)
-                .map((response: Response) => <Article[]>response.json())
-                .catch(() => new Observable())
-                .finally(() => reject())
-                .subscribe((articles: Article[]) => {
-                    this.articles = articles
-                    resolve(articles);
-                });
-        });
-
-        return promise;
-    }
+    constructor(private route: ActivatedRoute, private http: Http, private ArticleService: ArticleService) { }
 
     ngOnInit() {
         this.sub = this.route.params.subscribe(params => {
             this.id = +params['id'];
         });
-
-        this.getArticles().then(
+        let self = this;
+        self.ArticleService.getArticles().then(
             (data: Article[]) => {
                 data.forEach(element => {
-                  if (this.id === element.id) {
-                      this.article = element;
-                  } 
+                    if (this.id === element.id) {
+                        this.article = element;
+                    } 
                 });
             },
             (error) => {

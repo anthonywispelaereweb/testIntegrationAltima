@@ -38,6 +38,9 @@ import { AboutComponent } from './components/about/about.component';
 
 // Custom services
 
+import { ArticleService } from './services/article.service';
+
+
 export function customHttpFct(backend: XHRBackend, options: RequestOptions, router: Router) {
   return new CustomHttp(backend, options, router);
 }
@@ -74,7 +77,8 @@ export function customHttpFct(backend: XHRBackend, options: RequestOptions, rout
   ],
   providers: [
     // Add providers
-
+    ArticleService,
+    
     // Http middleware
     {
       provide: CustomHttp,
