@@ -1,0 +1,72 @@
+/*
+ * Nom du fichier                   : banner.component.scss
+ * Description                      : Fichier contenant le style de la bannière
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 03/07/2017
+ * Date de dernière modification    : 07/07/2017
+ */
+
+@import '../../../variables';
+
+.banner-content {
+    position: relative;
+    
+    .global-banner {
+        position: relative;
+        background: url("../../../assets/images/bannerBackground.png");
+        background-size: cover;
+        height: 530px;
+        filter: brightness(30%);
+        -webkit-filter: brightness(30%);
+        -moz-filter: brightness(30%);
+        -o-filter: brightness(30%);
+        -ms-filter: brightness(30%);
+    }
+
+    .global-banner-content {
+        position: absolute;
+        text-align: center;
+        height: 530px;
+        top: 0;
+        left: 0;
+        padding: 0;
+        color: $white;
+        margin: auto;
+
+        .tittle {
+            margin-top: 120px;
+            font-size: 60px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: Poppins;
+        }
+
+        .description {
+            margin-top: 40px;
+            font-size: 20px;
+            font-family: Bitter;
+        }
+
+        .btn-default {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 50px;
+            padding: 20px 0;
+            width: 250px;
+            line-height: 30px;
+            text-transform: uppercase;
+            border-radius: 35px;
+            border-color: transparent;
+            color: $white;
+            background-color: $red;
+            
+            &:hover {
+                background-color: $white;
+                color: $black
+            }
+        }
+    }
+}
+
+@import './banner.mediaqueries';

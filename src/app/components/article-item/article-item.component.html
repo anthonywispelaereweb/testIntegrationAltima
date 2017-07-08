@@ -1,0 +1,41 @@
+<!--
+  * Nom du fichier                   : article-item.component.html
+  * Description                      : Fichier contenant le html de la page d'un article
+  * Auteur(s)                        : Anthony Wispelaere
+  * Date de création                 : 07/07/2017
+  * Date de dernière modification    : 07/07/2017
+-->
+
+<div class="global-article">
+
+    <div class="container">
+        <app-menu></app-menu>
+    </div>
+
+    <app-banner></app-banner>
+
+    <div class="current-article container">
+
+        <div class="current-article-title">{{ article.title}}</div>
+        <div class="current-article-subtitle">{{ article.subtitle}}</div>
+
+        <div class="other-title">
+            Beautiful design
+        </div>
+
+        <div class="current-article-description">
+            {{ article.content }}
+        </div>
+
+        <div class="other-title">
+            Lorem
+        </div>
+
+        <div class="current-article-description">
+            {{ article.bigcontent }}
+        </div>
+    </div>
+
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+</div>

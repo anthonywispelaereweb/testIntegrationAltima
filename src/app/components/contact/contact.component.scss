@@ -1,0 +1,42 @@
+/*
+ * Nom du fichier                   : contact.component.scss
+ * Description                      : Fichier contenant le style de la bannière contact
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 0/07/2017
+ * Date de dernière modification    : 07/07/2017
+ */
+
+@import '../../../variables';
+
+.global-contact {
+    height: 100%;
+    background-color: $red;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: bold;
+    color: $white;
+
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    .btn-default {
+        text-transform: uppercase;
+        font-size: 18px;
+        color: $white;
+        padding: 8px 20PX;
+        margin-bottom: 70px;
+        background-color: $buttonContact;
+
+        &:hover {
+            background-color: $white;
+            color : $black;
+        }
+    }
+}
+
+@import './contact.mediaqueries';

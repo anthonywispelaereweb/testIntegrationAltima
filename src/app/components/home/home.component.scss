@@ -1,0 +1,15 @@
+/*
+ * Nom du fichier                   : home.compnent.scss
+ * Description                      : Fichier contenant le style de la page home
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 03/07/2017
+ * Date de dernière modification    : 06/07/2017
+ */
+
+@import '../../../variables';
+
+app-banner {
+    height: 530px;
+}
+
+@import './home.mediaqueries';

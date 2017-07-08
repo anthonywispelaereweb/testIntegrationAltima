@@ -1,0 +1,45 @@
+/*
+ * Nom du fichier                   : article-item.compnent.scss
+ * Description                      : Fichier contenant le style de la page d'un article
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 06/07/2017
+ * Date de dernière modification    : 07/07/2017
+ */
+
+@import '../../../variables';
+
+
+.global-article {
+    .current-article {
+        margin-bottom: 120px;
+
+        .current-article-title {
+            font-family: Poppins;
+            font-weight: bold;
+            font-size: 40px;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .current-article-subtitle {
+            font-family: Bitter;
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .current-article-description {
+            font-family: Bitter;
+            font-size: 14px;
+        }
+
+        .other-title {
+            font-family: Poppins;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+    }
+}
