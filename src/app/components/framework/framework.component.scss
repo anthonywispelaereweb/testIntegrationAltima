@@ -29,7 +29,6 @@
 
     .used-frameworks{
         margin-top: 50px;
-        background: none;
         padding: 0;
         
         .logo-div {
@@ -66,3 +65,5 @@
         }
     }
 }
+
+@import './framework.mediaqueries';

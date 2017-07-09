@@ -3,40 +3,39 @@
  * Description                      : Fichier contenant les mediaqueries de la page about
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 08/07/2017
- * Date de dernière modification    : 08/07/2017
+ * Date de dernière modification    : 09/07/2017
  */
 
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: $medium-device-size) {
     .global-about {
-        padding: 0 5px;
+
         h1 {
             font-size: 30px;
-            margin-top: 60px;
+            margin-top: 30px;
         }
 
         .global-content {
-            margin-bottom: 50px;
-
-            .subtitle-about {
-                text-align: center;
-                font-family: Bitter;
-                font-size: 16px;
-                margin-bottom: 40px;
-            }
+            margin-bottom: 30px;
+            margin-top: 30px;
 
             .other-title {
-                font-size: 16px;
-                margin-top: 20px;
-                margin-bottom: 10px;
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+            .subtitle-about {
+                font-size: 20px;
+                margin-bottom: 60px;
             }
 
             .contaent-about {
-                font-size: 12px;
+                font-size: 14px;
             }
         }
     }
+
 }
 
 
@@ -44,38 +43,67 @@
 
 @media only screen and (max-width: $small-device-size) {
     .global-about {
-        padding: 0 5px;
+
         h1 {
             font-size: 30px;
-            margin-top: 80px;
+            margin-top: 30px;
         }
 
         .global-content {
-            margin-bottom: 80px;
+            margin-bottom: 30px;
+            margin-top: 30px;
 
             .subtitle-about {
-                text-align: center;
-                font-family: Bitter;
-                font-size: 16px;
-                margin-bottom: 50px;
+                font-size: 20px;
+                margin-bottom: 15px !important;
             }
 
             .other-title {
-                font-size: 16px;
-                margin-top: 20px;
-                margin-bottom: 10px;
+                padding: 5px;
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 15px !important;
+                margin-top: 15px !important;
             }
 
-            .contaent-about {
-                font-size: 12px;
+            .content-about {
+                font-size: 14px;
+                padding: 5px;
             }
         }
     }
+
 }
 
 
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: $mini-device-size) {
-    
+    .global-about {
+
+        h1 {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+
+        .global-content {
+            margin-bottom: 30px;
+            margin-top: 30px;
+
+            .other-title {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+            .subtitle-about {
+                font-size: 20px;
+                margin-bottom: 60px;
+            }
+
+            .contaent-about {
+                font-size: 14px;
+            }
+        }
+    }
+
 }

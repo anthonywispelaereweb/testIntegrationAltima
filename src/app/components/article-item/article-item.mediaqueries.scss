@@ -1,0 +1,111 @@
+/*
+ * Nom du fichier                   : article-item.mediaqueries.scss
+ * Description                      : Fichier contenant les mediaqueries de la page d'un article
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 07/07/2017
+ * Date de dernière modification    : 09/07/2017
+ */
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $medium-device-size) {
+    .global-article {
+        .current-article {
+            margin-bottom: 40px;
+
+            .current-article-title {
+                font-size: 35px;
+                margin-top: 40px;
+                text-align: center;
+            }
+
+            .current-article-subtitle {
+                font-size: 18px;
+                margin-top: 20px;
+            }
+
+            .current-article-description {
+                font-size: 16px;
+                padding: 5px;
+            }
+
+            .other-title {
+                font-size: 18px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+/* Small Devices, Desktops */
+
+@media only screen and (max-width: $small-device-size) {
+    .global-article {
+        .current-article {
+            margin-bottom: 30px;
+
+            .current-article-title {
+                font-size: 30px;
+                margin-top: 50px;
+                text-align: center;
+            }
+
+            .current-article-subtitle {
+                font-size: 18px;
+                margin-top: 20px;
+            }
+
+            .current-article-description {
+                font-family: Bitter;
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            .other-title {
+                font-size: 18px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+/* Mini Devices, Desktops */
+
+@media only screen and (max-width: $mini-device-size) {
+
+    .global-article {
+        .current-article {
+            margin-bottom: 30px;
+
+            .current-article-title {
+                font-size: 30px;
+                margin-top: 50px;
+                text-align: center;
+            }
+
+            .current-article-subtitle {
+                font-size: 18px;
+                margin-top: 20px;
+            }
+
+            .current-article-description {
+                font-family: Bitter;
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            .other-title {
+                font-size: 18px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+    }
+}

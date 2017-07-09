@@ -3,40 +3,44 @@
  * Description                      : Fichier contenant les mediaqueries des services
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 03/07/2017
- * Date de dernière modification    : 06/07/2017
+ * Date de dernière modification    : 09/07/2017
  */
 
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: $medium-device-size) {
-    .global-business-service {
-        height: 100%;
+    section {
+        margin-bottom: 80px;
+        margin-top: 80px;
+        
+        .global-business-service {
 
-        .title {
-            margin-top: 20px;
-            font-size: 20px;
-
-            h1 {
-                margin-top: 20px;
+            .title {
+                font-size: 50px;
             }
-        }
 
-        .subtitles {
-            margin: 15px 0;
-        }
+            .subtitles {
+                margin: 20px 0;
+                font-size: 30px;
+            }
 
-        .global-service {
-            margin: 5px 0;
+            .global-service {
+                .service-item {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    img {
+                        min-height: 50px;
+                        max-height: 50px;
+                    }
 
-            .service-item {
+                    .title-item {
+                        font-size: 25px;
+                        margin: 40px 0;
+                    }
 
-                i, img {
-                    min-height: 80px;
-                    margin: 10px 0;
-                }
-
-                .description {
-                    color: $grey;
+                    .description {
+                        font-size: 25px;
+                    }
                 }
             }
         }
@@ -47,7 +51,35 @@
 /* Large Devices, Desktops */
 
 @media only screen and (max-width: $small-device-size) {
-    
+    section {
+        
+        .global-business-service {
+
+            .title {
+                font-size: 45px;
+            }
+
+            .subtitles {
+                margin: 20px 0;
+                font-size: 25px;
+                
+            }
+
+            .global-service {
+                .service-item {
+                    img {
+                        min-height: 50px;
+                        max-height: 50px;
+                    }
+
+                    .title-item {
+                        font-size: 25px;
+                        margin: 40px 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -55,4 +87,42 @@
 
 @media only screen and (max-width: $mini-device-size) {
     
+    section {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        
+        .global-business-service {
+            text-align: center;
+
+
+            .title {
+                font-size: 15px;
+            }
+
+            .subtitles {
+                margin: 10px 0;
+                font-size: 15px;
+            }
+
+            .global-service {
+                .service-item {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+
+                    img {
+                        min-height: 40px;
+                        max-height: 40px;
+                    }
+
+                    .title-item {
+                        font-size: 16px;
+                        margin: 20px 0;
+                    }
+                    .description {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 }

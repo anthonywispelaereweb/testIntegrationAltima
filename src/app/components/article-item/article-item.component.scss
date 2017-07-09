@@ -8,7 +8,6 @@
 
 @import '../../../variables';
 
-
 .global-article {
     .current-article {
         margin-bottom: 120px;
@@ -43,3 +42,5 @@
         }
     }
 }
+
+@import './article-item.mediaqueries';

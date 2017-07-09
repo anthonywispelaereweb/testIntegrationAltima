@@ -1,0 +1,117 @@
+/*
+ * Nom du fichier                   : banner-relax.mediaqueries.scss
+ * Description                      : Fichier contenant les mediaqueries de la page blog
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 03/07/2017
+ * Date de dernière modification    : 09/07/2017
+ */
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $medium-device-size) {
+    .global-blog {
+
+        h1 {
+            margin-top: 80px;
+        }
+
+        .articles {
+            .article-item {
+                margin-bottom: 70px;
+
+                .article-title {
+                    text-align: center;
+                }
+            }
+        }
+
+        
+    }
+}
+
+
+/* Small Devices, Desktops */
+
+@media only screen and (max-width: $small-device-size) {
+    .global-blog {
+        
+        h1 {
+            font-size: 35px;
+            margin-top: 50px;
+        }
+
+        .subtitle-blog {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .articles {
+            .article-item {
+                margin-bottom: 30px;
+                text-align: center;
+                padding: 0;
+
+                .article-title {
+                    font-size: 18px;
+                    color: $black;
+                    text-align: center;
+                }
+
+                img {
+                    margin-top: 10px;
+                }
+
+                .description-article {
+                    font-size: 14px;
+                    overflow: auto;
+                    padding-left: 5px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Mini Devices, Desktops */
+
+@media only screen and (max-width: $mini-device-size) {
+
+    .global-blog {
+        
+        h1 {
+            font-size: 30px;
+            margin-top: 50px;
+        }
+
+        .subtitle-blog {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .articles {
+            .article-item {
+                margin-bottom: 30px;
+                text-align: center;
+                padding: 0;
+
+                .article-title {
+                    font-size: 18px;
+                    color: $black;
+                    text-align: center;
+                }
+
+                img {
+                    margin-top: 10px;
+                }
+
+                .description-article {
+                    font-size: 14px;
+                    overflow: auto;
+                    padding-left: 5px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

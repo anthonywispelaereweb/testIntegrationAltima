@@ -3,23 +3,63 @@
  * Description                      : Fichier contenant les mediaqueries de la banniere de contact
  * Auteur(s)                        : Anthony Wispelaere
  * Date de création                 : 06/07/2017
- * Date de dernière modification    : 06/07/2017
+ * Date de dernière modification    : 09/07/2017
  */
 
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: $medium-device-size) {
-    
+    .global-contact {
+
+        h1 {
+            font-size: 35px;
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+
+        .btn-default {
+            font-size: 20px;
+            padding: 8px 20PX;
+            margin-bottom: 35px;
+        }
+    }
 }
 
 /* Large Devices, Desktops */
 
 @media only screen and (max-width: $small-device-size) {
-    
+    .global-contact {
+
+        h1 {
+            font-size: 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .btn-default {
+            font-size: 15px;
+            padding: 8px 20PX;
+            margin-bottom: 20px;
+        }
+    }
 }
 
-/* Medium Devices, Desktops */
+/* Mini Devices, Desktops */
 
 @media only screen and (max-width: $mini-device-size) {
-    
+
+    .global-contact {
+
+        h1 {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn-default {
+            font-size: 15px;
+            padding: 8px 20PX;
+            margin-bottom: 20px;
+        }
+    }
 }

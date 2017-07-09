@@ -1,0 +1,130 @@
+/*
+ * Nom du fichier                   : framework.mediaqueries.scss
+ * Description                      : Fichier contenant les mediaqueries du composant framework
+ * Auteur(s)                        : Anthony Wispelaere
+ * Date de création                 : 06/07/2017
+ * Date de dernière modification    : 09/07/2017
+ */
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: $medium-device-size) {
+    
+}
+
+/* Large Devices, Desktops */
+
+@media only screen and (max-width: $small-device-size) {
+    .global-framework {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 30px;
+            margin-top: 50px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+        }
+
+        .used-frameworks{
+            margin-top: 30px;
+            padding: 0;
+            
+            .logo-div {
+                height: 80px;
+                padding: 0;
+                .react-div {
+                    margin-left: 30px;
+                }
+                .separator-div {
+                    text-align: center;
+                    height: 80px;
+
+                    .separator-ligne {
+                        margin-top: 33px;
+                        width: 10px;
+                        height: 2px;
+                    }
+                }
+                
+                div {
+                    img {
+                        height: 60px;
+                    }
+                }
+            }
+
+            .framework-item {
+
+                h3 {
+                    margin-top: 10px;
+                }
+
+                .description {
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* Mini Devices, Desktops */
+
+@media only screen and (max-width: $mini-device-size) {
+
+    .global-framework {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 30px;
+            margin-top: 50px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+        }
+
+        .used-frameworks{
+            margin-top: 30px;
+            padding: 0;
+            
+            .logo-div {
+                height: 80px;
+                padding: 0;
+
+                .separator-div {
+                    text-align: center;
+                    height: 80px;
+
+                    .separator-ligne {
+                        margin-top: 33px;
+                        width: 10px;
+                        height: 2px;
+                    }
+                }
+                
+                div {
+                    img {
+                        height: 60px;
+                    }
+                }
+            }
+
+            .framework-item {
+
+                h3 {
+                    margin-top: 10px;
+                }
+
+                .description {
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

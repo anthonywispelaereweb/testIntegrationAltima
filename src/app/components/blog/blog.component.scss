@@ -25,6 +25,8 @@
                 font-family: Poppins;
                 font-weight: bold;
                 font-size: 18px;
+                color: $black;
+
             }
 
             img {
@@ -58,3 +60,5 @@
         margin-bottom: 60px;
     }
 }
+
+@import './blog.mediaqueries.scss';
